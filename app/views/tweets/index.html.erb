@@ -1,15 +1,40 @@
-<% if flash[:notice] %>
-    <%= flash[:notice] %>
-<% end %>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link href="application.css" rel="stylesheet">
+    </head>
+    <body>
 
-<% @tweets.each do |e| %>
-    <p>
-        <%= e.message %>
-        <%= ((Time.current - e.tdate)/60).to_i %>分
-        <%=link_to '削除', "/tweets/#{e.id}", data: { turbo_method: :delete } %>
-        <%=link_to '表示', "/tweets/#{e.id}" %>
-        <%=link_to '編集', "/tweets/#{e.id}/edit" %>
-    </p>
-<% end %>
+<div id="page">        
 
-<%= link_to '新規追加', 'tweets/new' %>
+<header>
+<h1>Twitter</h1>
+<nav>
+    <ul>
+        <li><a href=".">ホーム</a></li>
+        <li><a href=".">話題を検索</a></li>
+        <li><a href=".">通知</a></li>
+        <li><a href=".">メッセージ</a></li>
+        <li><a href=".">ブックマーク</a></li>
+        <li><a href=".">リスト</a></li>
+        <li><a href=".">プロフィール</a></li>
+        <li><a href=".">もっと見る</a></li>
+        <li><a href=".">ツイートする</a></li>
+        <li style="float:right;"><a href=".">ツイート</a></li>
+        <li style="float:right;"><a href=".">ツイートと返信</a></li>
+        <li style="float:right;"><a href=".">メディア</a></li>
+        <li style="float:right;"><a href=".">いいね</a></li>
+    </ul>
+</nav>
+</header>
+
+<div id="body">
+
+
+<p>あああ</p>
+
+<%= image_tag 'bird.png' %>
+
+</div>
+
