@@ -1,2 +1,9 @@
-<p>ログイン中です！</p>
-
+<%= form_tag '/top/login', method: :post do %>
+  <%= label_tag :uid, 'message' %>
+  <%= text_field_tag :uid %>
+  <%= submit_tag 'ツイート' %>
+<% end %>
+<hr>
+<p><%= link_to 'ログアウト' %></p>
+<p><%= link_to 'ログイン' %></p>
+<p><%= link_to 'ユーザー一覧' %></p>
