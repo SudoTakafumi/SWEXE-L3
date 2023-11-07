@@ -1,9 +1,9 @@
 <%= form_tag '/top/login', method: :post do %>
-  <%= label_tag :uid, 'message' %>
+  <%= label_tag :uid, 'ユーザー' %>
   <%= text_field_tag :uid %>
-  <%= submit_tag 'ツイート' %>
+  <%= label_tag :uid, 'パスワード' %>
+  <%= text_field_tag :uid %>
+  <%= label_tag :uid, 'パスワード（確認）' %>
+  <%= text_field_tag :uid %>
+  <%= submit_tag '登録' %>
 <% end %>
-<hr>
-<p><%= link_to 'ログアウト' %></p>
-<p><%= link_to 'ログイン' %></p>
-<p><%= link_to 'ユーザー一覧' %></p>
